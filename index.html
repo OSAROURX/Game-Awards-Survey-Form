@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="fvv.png" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header id="center">
+      <h1 id="title">The Game Awards 2020</h1>
+      <p id="description">Vote for your favorite game this year!</p>
+    </header>
+    <form id="survey-form" class="tilt">
+      <div class="divgroup">
+        <label id="name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          class="input-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="divgroup">
+        <label id="email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="divgroup">
+        <p>What type of gamer are you ?</p>
+        <select id="dropdown" class="input-control" required>
+          <option disabled selected value>Please Select</option>
+          <option value="competitive gamer">Competitive Gamer</option>
+          <option value="the hardcore gamer">Hardcore Gamer</option>
+          <option value="casual gamer">Casual Gamer</option>
+          <option value="mobile gamer">Mobile Gamer</option>
+        </select>
+      </div>
+      <div class="divgroup last">
+        <label id="number-label">Daily playing hours ?</label>
+        <input
+          type="number"
+          id="number"
+          min="1"
+          max="24"
+          class="input-control"
+          placeholder="Enter your Answer"
+        />
+      </div>
+      <div class="box second">
+        <h3>Best Game Publishing/Development Company ?</h3>
+        <label
+          ><input
+            name="prefer"
+            value="Activision"
+            type="checkbox"
+            class="checkbox"
+          />Activision</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="Bethesda"
+            type="checkbox"
+            class="checkbox"
+          />Bethesda</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="CD Projekt RED"
+            type="checkbox"
+            class="checkbox"
+          />CD Projekt RED</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Nintendo"
+            type="checkbox"
+            class="checkbox"
+          />Nintendo</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="PlayStation"
+            type="checkbox"
+            class="checkbox"
+          />PlayStation</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Xbox Game Studios"
+            type="checkbox"
+            class="checkbox"
+          />Xbox Game Studios</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Ubisoft"
+            type="checkbox"
+            class="checkbox"
+          />Ubisoft</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Square Enix"
+            type="checkbox"
+            class="checkbox"
+          />Square Enix</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="EA"
+            type="checkbox"
+            class="checkbox"
+          />EA</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="SEGA"
+            type="checkbox"
+            class="checkbox"
+          />SEGA</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Supergiant Games"
+            type="checkbox"
+            class="checkbox"
+          />Supergiant Games</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Valve"
+            type="checkbox"
+            class="checkbox"
+          />Valve</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Shooting Game</h3>
+        <label>
+          <input
+            name="shooting"
+            value="Call of Duty Black Ops: Cold War"
+            type="radio"
+            class="radio"
+            checked
+          />Call of Duty Black Ops: Cold War</label
+        >
+        <label>
+          <input
+            name="shooting"
+            value="Call of Duty: Warzone"
+            type="radio"
+            class="radio"
+          />Call of Duty: Warzone</label
+        >
+
+        <label
+          ><input
+            name="shooting"
+            value="Destiny 2: Beyond Light"
+            type="radio"
+            class="radio"
+          />Destiny 2: Beyond Light</label
+        >
+        <label>
+          <input
+            name="shooting"
+            value="DOOM Eternal"
+            type="radio"
+            class="radio"
+          />DOOM Eternal</label
+        >
+        <label>
+          <input
+            name="shooting"
+            value="Half-Life Alyx"
+            type="radio"
+            class="radio"
+          />Half-Life Alyx</label
+        >
+
+        <label
+          ><input
+            name="shooting"
+            value="Hyper Scape"
+            type="radio"
+            class="radio"
+          />Hyper Scape</label
+        >
+        <label>
+          <input
+            name="shooting"
+            value="Valorant"
+            type="radio"
+            class="radio"
+          />Valorant</label
+        >
+        <label>
+          <input
+            name="shooting"
+            value="Fortnite"
+            type="radio"
+            class="radio"
+          />Fortnite</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Platform Game</h3>
+        <label>
+          <input
+            name="platform"
+            value="Astro's Playroom"
+            type="radio"
+            class="radio"
+            checked
+          />Astro's Playroom</label
+        >
+        <label>
+          <input
+            name="platform"
+            value="Crash Bandicoot 4: it's About Time"
+            type="radio"
+            class="radio"
+          />Crash Bandicoot 4: it's About Time</label
+        >
+        <label>
+          <input
+            name="platform"
+            value="Dead Cells: the Bad Seed"
+            type="radio"
+            class="radio"
+          />Dead Cells: the Bad Seed</label
+        >
+        <label
+          ><input
+            name="platform"
+            value="Ori and the Will of the Wisps"
+            type="radio"
+            class="radio"
+          />Ori and the Will of the Wisps</label
+        >
+        <label>
+          <input
+            name="platform"
+            value="Sackboy: A Big Adventure"
+            type="radio"
+            class="radio"
+          />Sackboy: A Big Adventure</label
+        >
+        <label>
+          <input
+            name="platform"
+            value="Super Mario 3d All Stars"
+            type="radio"
+            class="radio"
+          />Super Mario 3d All Stars</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Ongoing Game</h3>
+        <label>
+          <input
+            name="ongoing"
+            value="Fortnite"
+            type="radio"
+            class="radio"
+            checked
+          />Fortnite</label
+        >
+        <label>
+          <input
+            name="ongoing"
+            value="Apex Legends"
+            type="radio"
+            class="radio"
+          />Apex Legends</label
+        >
+
+        <label
+          ><input
+            name="ongoing"
+            value="Among Us"
+            type="radio"
+            class="radio"
+          />Among Us</label
+        >
+        <label>
+          <input
+            name="ongoing"
+            value="League of Legends"
+            type="radio"
+            class="radio"
+          />League of Legends</label
+        >
+        <label>
+          <input
+            name="ongoing"
+            value="Minecraft"
+            type="radio"
+            class="radio"
+          />Minecraft</label
+        >
+
+        <label
+          ><input
+            name="ongoing"
+            value="No Man's Sky"
+            type="radio"
+            class="radio"
+          />No Man's Sky</label
+        >
+        <label>
+          <input
+            name="ongoing"
+            value="Rocket League"
+            type="radio"
+            class="radio"
+          />Rocket League</label
+        >
+        <label>
+          <input
+            name="ongoing"
+            value="World of Warcraft"
+            type="radio"
+            class="radio"
+          />World of Warcraft</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Indie Game</h3>
+        <label>
+          <input
+            name="indie"
+            value="Carrion"
+            type="radio"
+            class="radio"
+            checked
+          />Carrion</label
+        >
+        <label
+          ><input
+            name="indie"
+            value="Call of the Sea"
+            type="radio"
+            class="radio"
+          />Call of the Sea</label
+        >
+        <label>
+          <input
+            name="indie"
+            value="Fall Guys"
+            type="radio"
+            class="radio"
+          />Fall Guys</label
+        >
+        <label>
+          <input name="indie" value="Hades" type="radio" class="radio" />Hades
+        </label>
+
+        <label
+          ><input
+            name="indie"
+            value="Mortal Shell"
+            type="radio"
+            class="radio"
+          />Mortal Shell</label
+        >
+        <label>
+          <input
+            name="indie"
+            value="Spelunky 2"
+            type="radio"
+            class="radio"
+          />Spelunky 2</label
+        >
+        <label>
+          <input
+            name="indie"
+            value="Spiritfarer"
+            type="radio"
+            class="radio"
+          />Spiritfarer</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best RPG Game</h3>
+        <label>
+          <input
+            name="adventure"
+            value="Assassin's Creed Valhalla"
+            type="radio"
+            class="radio"
+            checked
+          />Assassin's Creed Valhalla</label
+        >
+        <label>
+          <input
+            name="adventure"
+            value="Ghost of Tsushima"
+            type="radio"
+            class="radio"
+          />Ghost of Tsushima</label
+        >
+
+        <label
+          ><input
+            name="adventure"
+            value="Ghostrunner"
+            type="radio"
+            class="radio"
+          />Ghostrunner</label
+        >
+        <label>
+          <input
+            name="adventure"
+            value="Immortals: Fenyx Rising"
+            type="radio"
+            class="radio"
+          />Immortals: Fenyx Rising</label
+        >
+        <label>
+          <input
+            name="adventure"
+            value="The Last of Us: Part II"
+            type="radio"
+            class="radio"
+          />The Last of Us: Part II</label
+        >
+
+        <label
+          ><input
+            name="adventure"
+            value="Ori and the Will of the Wisps"
+            type="radio"
+            class="radio"
+          />Ori and the Will of the Wisps</label
+        >
+        <label>
+          <input
+            name="adventure"
+            value="Spider-Man: Miles Morales"
+            type="radio"
+            class="radio"
+          />Spider-Man: Miles Morales</label
+        >
+        <label>
+          <input
+            name="adventure"
+            value="Watch Dogs: Legion"
+            type="radio"
+            class="radio"
+          />Watch Dogs: Legion</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Action Game</h3>
+        <label>
+          <input
+            name="action"
+            value="Minecraft Dungeons"
+            type="radio"
+            class="radio"
+            checked
+          />Minecraft Dungeons</label
+        >
+        <label>
+          <input
+            name="action"
+            value="Hades"
+            type="radio"
+            class="radio"
+          />Hades</label
+        >
+        <label>
+          <input
+            name="action"
+            value="DOOM Eternal"
+            type="radio"
+            class="radio"
+          />DOOM Eternal</label
+        >
+
+        <label
+          ><input
+            name="action"
+            value="Star Wars Squadrons"
+            type="radio"
+            class="radio"
+          />Star Wars Squadrons</label
+        >
+        <label>
+          <input
+            name="action"
+            value="Spider-Man: Miles Morales"
+            type="radio"
+            class="radio"
+          />Spider-Man: Miles Morales</label
+        >
+        <label>
+          <input
+            name="action"
+            value="Call of Duty: Warzone"
+            type="radio"
+            class="radio"
+          />Call of Duty: Warzone</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Sport/Racing Game</h3>
+        <label>
+          <input
+            name="sport"
+            value="DiRT 5"
+            type="radio"
+            class="radio"
+            checked
+          />DIRT 5</label
+        >
+        <label
+          ><input name="sport" value="F1 2020" type="radio" class="radio" />F1
+          2020</label
+        >
+        <label>
+          <input name="sport" value="FIFA 21" type="radio" class="radio" />FIFA
+          21</label
+        >
+        <label>
+          <input name="sport" value="NBA 2k21" type="radio" class="radio" />NBA
+          2k21</label
+        >
+        <label
+          ><input
+            name="sport"
+            value="Project Cars 3"
+            type="radio"
+            class="radio"
+          />Project Cars 3</label
+        >
+        <label>
+          <input
+            name="sport"
+            value="Tony Hawk's Pro Skater 1+2"
+            type="radio"
+            class="radio"
+          />Tony Hawk's Pro Skater 1+2</label
+        >
+        <label>
+          <input name="sport" value="WRC 9" type="radio" class="radio" />WRC
+          9</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Online Game</h3>
+        <label>
+          <input
+            name="online"
+            value="Call of Duty: Warzone"
+            type="radio"
+            class="radio"
+            checked
+          />Call of Duty: Warzone</label
+        >
+        <label>
+          <input
+            name="online"
+            value="Call of Duty Black Ops: Cold War"
+            type="radio"
+            class="radio"
+          />Call of Duty Black Ops: Cold War</label
+        >
+        <label>
+          <input
+            name="online"
+            value="Fall Guys"
+            type="radio"
+            class="radio"
+          />Fall Guys</label
+        >
+
+        <label
+          ><input
+            name="online"
+            value="Genshin Impact"
+            type="radio"
+            class="radio"
+          />Genshin Impact</label
+        >
+        <label>
+          <input
+            name="online"
+            value="Rogue Company"
+            type="radio"
+            class="radio"
+          />Rogue Company</label
+        >
+        <label>
+          <input
+            name="online"
+            value="Valorant"
+            type="radio"
+            class="radio"
+          />Valorant</label
+        >
+      </div>
+      <div class="box">
+        <h3>Best Remake/Remastered Game</h3>
+        <label>
+          <input
+            name="remake"
+            value="Demon's Souls"
+            type="radio"
+            class="radio"
+            checked
+          />Demon's Souls</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Final Fantasy 7 REMAKE"
+            type="radio"
+            class="radio"
+          />Final Fantasy 7 REMAKE</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Crisis Remastered"
+            type="radio"
+            class="radio"
+          />Crisis Remastered</label
+        >
+        <label
+          ><input
+            name="remake"
+            value="Mafia REMAKE"
+            type="radio"
+            class="radio"
+          />Mafia Definitive Edition</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Need for Speed Hot Pursuit Remastered"
+            type="radio"
+            class="radio"
+          />Need for Speed Hot Pursuit Remastered</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Resident Evil 3"
+            type="radio"
+            class="radio"
+          />Resident Evil 3</label
+        >
+
+        <label
+          ><input
+            name="remake"
+            value="Saints Row the Third: Remastered"
+            type="radio"
+            class="radio"
+          />Saints Row the Third: Remastered</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Spider-Man Remastered"
+            type="radio"
+            class="radio"
+          />Spider-Man Remastered</label
+        >
+        <label>
+          <input
+            name="remake"
+            value="Tony Hawk's Pro Skater 1+2"
+            type="radio"
+            class="radio"
+          />Tony Hawk's Pro Skater 1+2</label
+        >
+      </div>
+      <div class="box">
+        <h3>Game Of The Year</h3>
+        <label>
+          <input
+            name="GOTY"
+            value="Call of Duty Black Ops: Cold War"
+            type="radio"
+            class="radio"
+            checked
+          />Ghost of Tsushima</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Final Fantasy 7: REMAKE"
+            type="radio"
+            class="radio"
+          />Final Fantasy 7: REMAKE</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Hades"
+            type="radio"
+            class="radio"
+          />Hades</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="The Last of Us: Part II"
+            type="radio"
+            class="radio"
+          />The Last of Us: Part II</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Microsoft Flight Simulator"
+            type="radio"
+            class="radio"
+          />Microsoft Flight Simulator</label
+        >
+        <label>
+          <input name="GOTY" value="Nioh 2" type="radio" class="radio" />Nioh
+          2</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Ori and the Will of the Wisps"
+            type="radio"
+            class="radio"
+          />Ori and the Will of the Wisps</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Spider-Man: Miles Morales"
+            type="radio"
+            class="radio"
+          />Spider-Man: Miles Morales</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Watch Dogs: Legion"
+            type="radio"
+            class="radio"
+          />Watch Dogs: Legion</label
+        >
+
+        <label
+          ><input
+            name="GOTY"
+            value="Demon's Souls"
+            type="radio"
+            class="radio"
+          />Demon's Souls</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Cyberpunk 2077"
+            type="radio"
+            class="radio"
+          />Cyberpunk 2077</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Crash Bandicoot 4: it's About Time"
+            type="radio"
+            class="radio"
+          />Crash Bandicoot 4: it's About Time</label
+        >
+        <label
+          ><input
+            name="GOTY"
+            value="Call of Duty Black Ops: Cold War"
+            type="radio"
+            class="radio"
+          />Call of Duty Black Ops: Cold War</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Assassin's Creed: Valhalla"
+            type="radio"
+            class="radio"
+          />Assassin's Creed: Valhalla</label
+        >
+        <label>
+          <input
+            name="GOTY"
+            value="Animal Crossing: New Horizons"
+            type="radio"
+            class="radio"
+          />Animal Crossing: New Horizons</label
+        >
+      </div>
+      <h3>What games are you most excited for that’s releasing in 2021 ?</h3>
+      <textarea
+        id="comments"
+        class="textarea"
+        placeholder="Write Here..."
+      ></textarea>
+      <button type="submit" id="submit">Submit</button>
+      <div class="footer">
+        <h2>
+          Coded By
+          <a href="https://www.freecodecamp.org/leviathansr" target="_blank"
+            >LeviaThanSr</a
+          >
+        </h2>
+      </div>
+    </form>
+  </body>
+</html>
