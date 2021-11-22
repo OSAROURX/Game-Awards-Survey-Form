@@ -1,1 +1,1 @@
-# [The-Game-Awards](https://leviathansr.github.io/Game-Awards-Survey-Form/)
+# [The-Game-Awards](https://survey-form-sr.netlify.app/)

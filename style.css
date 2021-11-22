@@ -12,6 +12,7 @@ body {
   line-height: 1.4;
   text-align: center;
   font-size: 20px;
+  overflow: overlay;
 }
 
 #center {
@@ -121,36 +122,28 @@ label {
 
 #submit:hover {
   background: #0f5da7;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
-.footer {
-  width: 100%;
+.footer h2 {
+  font-size: 20px;
   text-align: center;
-  font-size: 15px;
-  font-family: "Courier New", Courier, monospace;
-}
-.footer a {
-  text-decoration: none;
-  color: currentColor;
-  transition: 0.3s ease;
-}
-.footer a:hover {
-  color: #0099ff;
-  transition: 0.3s ease;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: #24283d;
+  width: 17px;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #536976;
+  background: rgb(0, 0, 0);
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #aacee2;
 }
 
 @media only screen and (max-width: 320px) {
@@ -213,23 +206,7 @@ label {
 
   #submit:hover {
     background: #0f5da7;
-    transition: 0.3s ease;
-  }
-
-  .footer {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .footer a {
-    text-decoration: none;
-    color: currentColor;
-    transition: 0.3s ease;
-  }
-  .footer a:hover {
-    color: rgb(2, 180, 40);
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
@@ -292,23 +269,7 @@ label {
 
   #submit:hover {
     background: #0f5da7;
-    transition: 0.3s ease;
-  }
-
-  .footer {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .footer a {
-    text-decoration: none;
-    color: currentColor;
-    transition: 0.3s ease;
-  }
-  .footer a:hover {
-    color: rgb(2, 180, 40);
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 }
 
@@ -372,22 +333,6 @@ label {
 
   #submit:hover {
     background: #0f5da7;
-    transition: 0.3s ease;
-  }
-
-  .footer {
-    width: 100%;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Courier New", Courier, monospace;
-  }
-  .footer a {
-    text-decoration: none;
-    color: currentColor;
-    transition: 0.3s ease;
-  }
-  .footer a:hover {
-    color: rgb(2, 180, 40);
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 }
