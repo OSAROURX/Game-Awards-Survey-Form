@@ -1,0 +1,356 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"),
+    url("../fonts/inter-v13-latin-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"),
+    url("../fonts/inter-v13-latin-700.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(120deg, #536976 0%, #292e49 100%);
+  background-attachment: fixed;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 20px;
+  overflow: overlay;
+}
+
+#center {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+}
+
+#description {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#survey-form {
+  background-color: rgba(7, 7, 7, 0.4);
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+  width: 65%;
+  padding: 50px 50px 10px 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.box {
+  padding: 5px 20px;
+  background-color: rgba(27, 66, 88, 0.3);
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid rgba(83, 105, 118, 0.1);
+}
+
+.last {
+  margin-bottom: 50px;
+}
+
+h3 {
+  border-bottom: 5px solid #0099ff;
+  width: fit-content;
+  padding: 10px 0;
+  margin-top: 0;
+}
+
+input,
+button,
+select,
+textarea {
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.input-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: #495057;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  margin: 0 auto 30px auto;
+  background-color: rgb(233, 233, 233);
+  background-clip: padding-box;
+}
+
+.radio,
+.checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.textarea {
+  min-height: 300px;
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+#submit {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #536976;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 30px auto 60px auto;
+  transition: 0.3s ease;
+}
+
+#submit:hover {
+  background: #0f5da7;
+  transition: 0.2s ease;
+}
+
+.footer h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #aacee2;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 18px;
+  }
+  #center {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
+
+  #survey-form {
+    width: 95%;
+    padding: 15px 10px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+
+  .input-control {
+    height: 40px;
+  }
+
+  .radio,
+  .checkbox {
+    margin-right: 10px;
+    min-height: 15px;
+    min-width: 15px;
+    margin-bottom: 5px;
+  }
+
+  .textarea {
+    min-height: 130px;
+    width: 100%;
+  }
+
+  #submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #536976;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 30px auto 60px auto;
+    transition: 0.3s ease;
+  }
+
+  #submit:hover {
+    background: #0f5da7;
+    transition: 0.2s ease;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  #center {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
+
+  #survey-form {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+
+  .input-control {
+    height: 40px;
+  }
+
+  .radio,
+  .checkbox {
+    margin-right: 10px;
+    min-height: 15px;
+    min-width: 15px;
+    margin-bottom: 5px;
+  }
+
+  .textarea {
+    min-height: 130px;
+    width: 100%;
+  }
+
+  #submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #536976;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 30px auto 60px auto;
+    transition: 0.3s ease;
+  }
+
+  #submit:hover {
+    background: #0f5da7;
+    transition: 0.2s ease;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  #center {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #description {
+    font-size: 15px;
+  }
+
+  #survey-form {
+    width: 85%;
+    padding: 30px 30px 30px 30px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  .input-control {
+    height: 40px;
+  }
+
+  .radio,
+  .checkbox {
+    margin-right: 10px;
+    min-height: 15px;
+    min-width: 15px;
+    margin-bottom: 5px;
+  }
+
+  .textarea {
+    min-height: 160px;
+    width: 100%;
+  }
+
+  #submit {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #536976;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 30px auto 60px auto;
+    transition: 0.3s ease;
+  }
+
+  #submit:hover {
+    background: #0f5da7;
+    transition: 0.2s ease;
+  }
+}
